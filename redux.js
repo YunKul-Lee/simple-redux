@@ -1,10 +1,15 @@
+export const actionCreator = type => payload => ({
+    type,
+    payload
+});
 
-export function actionCreator(type, payload) {
-    return {
-        type,
-        payload,
-    };
-}
+
+// export function actionCreator(type, payload) {
+//     return {
+//         type,
+//         payload,
+//     };
+// }
 
 export function createStore(reducer) {
     let state;
